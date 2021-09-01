@@ -104,7 +104,7 @@
 
 - `Extract<Type, Union>`: 通过从 Type 中提取可分配给 Union 的所有联合成员来构造一个类型。
 
-```typescript
-type T = Extract<"a" | "b" | "c", "a" | "e">; // type T = "a";
-type T = Extract<string | number | (() => void), Function>; // type T = () => void
-```
+  ```typescript
+  type T = Extract<"a" | "b" | "c", "a" | "e">; // type T = "a";
+  type T = Extract<string | number | (() => void), Function>; // type T = () => void
+  ```
